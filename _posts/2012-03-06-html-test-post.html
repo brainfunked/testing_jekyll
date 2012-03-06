@@ -1,0 +1,18 @@
+---
+layout: default
+title: HTML Test Post
+tags:
+  - test
+  - foobar
+  - blah
+  - html
+---
+
+    <h1>
+      HTML Test Post
+    </h1>
+
+    <p class="description">
+    Has been tagged with the following: {{ post.tags | array_to_sentence_string }}
+    </p>
+
