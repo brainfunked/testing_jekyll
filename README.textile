@@ -1,0 +1,7 @@
+h1. Test Code for Jekyll
+
+This is just test code for trying out "Github Pages":http://pages.github.com using "Jekyll":http://github.com/mojombo/jekyll. The generated site is available at "http://brainfunked.github.com/testing_jekyll":http://brainfunked.github.com/testing_jekyll
+
+h1. License
+
+If you really do find anything of value here, feel free to use it under the MIT license.
