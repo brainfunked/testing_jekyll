@@ -1,55 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'/>
+  <head>
+    <meta charset='utf-8'/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+    <title>brainfunked: {{ page.title }}</title>
+  
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
 
-  <title>brainfunked: {{ page.title }}</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #808080;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #ffa500; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #ffa500; }
-    h3 { text-align: center; color: #ffa500; }
-    a { color: #ffa500; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="https://github.com/brainfunked/testing_jekyll"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <h1><a href="https://github.com/brainfunked/testing_jekyll">testing_jekyll</a>
-      <span class="small">by <a href="https://github.com/brainfunked">brainfunked</a></span>
-    </h1>
-
-    <div class="description">
-      Just testing out jekyll on github pages
+  <body>
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1><a href="https://github.com/brainfunked/testing_jekyll">testing_jekyll</a></h1>
+          <p>Just testing out Jekyll on github pages</p>
+          <hr/>
+          <span class="credits left">Project maintained by <a href="https://github.com/brainfunked">brainfunked</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+  
+{{ content }}
+  
+      </section>
     </div>
-
-    {{ content }}
-
-    <div class="footer">
-      Copyright 2012 <a href="mailto:mrugesh@brainfunked.org">Mrugesh Karnik</a>
-    </div>
-
-  </div>
-
-</body>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
 </html>

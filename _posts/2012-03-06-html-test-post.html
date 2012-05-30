@@ -8,11 +8,38 @@ tags:
   - html
 ---
 
-    <h1>
-      HTML Test Post
-    </h1>
+        <h1>HTML Test Post</h1>
+        <p>This is test post containing some text and images to see how the theme applies.</p>
 
-    <p class="description">
-    Has been tagged with the following: {{ post.tags | array_to_sentence_string }}
-    </p>
+        <p><a href="http://www.flickr.com/photos/floyd_n_milan/6742371377/in/set-72157628981695115/"><img src="http://farm8.staticflickr.com/7156/6742371377_0355b4a7be_b.jpg" alt="Love is All Around by brainfunked"/></a></p>
+
+        <h2>A Secondary Title</h2>
+        <p>And this is the subsection content with code!</p>
+        <pre>
+          <code>
+$ cowsay "moooooo"
+$ exit
+          </code>
+        </pre>
+
+        <h2>Another secondary<h2>
+        <p>This time, code with syntax highlighting!</p>
+
+        <div class="highlight">
+          <pre>
+            <span class="nb">require</span> <span class="s1">'adapter/memory'</span>
+            <span class="nb">require</span> <span class="s1">'toystore'</span>
+
+            <span class="k">class</span> <span class="nc">User</span>
+            <span class="kp">include</span> <span class="no">Toy</span><span class="o">::</span><span class="no">Store</span>
+            <span class="n">adapter</span> <span class="ss">:memory</span><span class="p">,</span> <span class="p">{}</span>
+
+            <span class="n">attribute</span> <span class="ss">:name</span><span class="p">,</span> <span class="nb">String</span>
+            <span class="k">end</span>
+          </pre>
+        </div>
+
+        <p>
+        Has been tagged with the following: {{ post.tags | array_to_sentence_string }}
+        </p>
 
