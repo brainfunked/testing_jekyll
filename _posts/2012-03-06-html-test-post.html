@@ -35,6 +35,21 @@ $ exit
 <span class="k">end</span></pre>
         </div>
 
+        <h2>And yet another secondary</h2>
+        <p>This one's using the highlighting capabilities in pygments. Does it render nicely?</p>
+
+{% highlight ruby %}
+require 'adapter/memory'
+require 'toystore'
+
+class User
+  include Toy::Store
+  adapter :memory, {}
+
+  attribute :name, String
+end
+{% endhighlight %}
+
         <p>
         Has been tagged with the following: {{ page.tags | array_to_sentence_string }}
         </p>
